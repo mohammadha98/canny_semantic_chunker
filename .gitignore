@@ -1,13 +1,47 @@
-# Byte-compiled / cache
+# ---------------------------------------------------------------- Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
 
-# pytest
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---------------------------------------------------------------- Testing
 .pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
 
-# Local virtual environments
+# ---------------------------------------------------------------- Virtual envs
 .venv/
 venv/
+env/
+ENV/
 
-# Evaluation reports
+# ---------------------------------------------------------------- Streamlit
+.streamlit/secrets.toml
+
+# ---------------------------------------------------------------- Evaluation output
 results/
+# Large corpora stay local; force-add small samples with `git add -f`
+data/
+
+# ---------------------------------------------------------------- Jupyter / logs
+.ipynb_checkpoints/
+*.log
+
+# ---------------------------------------------------------------- Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
