@@ -2,3 +2,4 @@ sentence-transformers
 pysbd
 numpy
 streamlit>=1.28.0
+pytest
